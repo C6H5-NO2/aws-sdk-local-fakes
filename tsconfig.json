@@ -1,40 +1,46 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "exactOptionalPropertyTypes": true,
-    "isolatedModules": true,
-    "lib": [
-      "es2024"
-    ],
-    "module": "nodenext",
-    "moduleDetection": "force",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUncheckedSideEffectImports": true,
-    "noUnusedLocals": true,
-    "paths": {
-      "@aws-sdk-local-fakes/*": [
-        "packages/*/"
-      ]
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "exactOptionalPropertyTypes": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "lib": [
+            "es2024"
+        ],
+        "module": "nodenext",
+        "moduleDetection": "force",
+        "moduleResolution": "nodenext",
+        "noErrorTruncation": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUncheckedSideEffectImports": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "paths": {
+            "@aws-sdk-local-fakes/*": [
+                "./packages/*"
+            ]
+        },
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2024",
+        "types": [
+            "node"
+        ],
+        "verbatimModuleSyntax": true
     },
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2024",
-    "types": [],
-    "verbatimModuleSyntax": true
-  },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.ts"
-  ],
-  "include": [
-    "packages/**/*"
-  ]
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.test.ts"
+    ],
+    "include": [
+        "packages/**/*"
+    ]
 }

@@ -1,10 +1,9 @@
 {
     "devDependencies": {
-        "@aws-sdk/client-lambda": "^3.1041.0",
-        "@aws/durable-execution-sdk-js": "^1.1.2"
+        "@aws-sdk/client-dynamodb": "^3.1041.0"
     },
     "main": "dist/index.js",
-    "name": "@aws-sdk-local-fakes/fake-lambda",
+    "name": "@aws-sdk-local-fakes/fake-dynamodb",
     "private": true,
     "scripts": {
         "build": "npx tsc --build --stopBuildOnErrors",
