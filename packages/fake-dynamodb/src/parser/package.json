@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "antlr4": "4.13.2"
+    },
+    "main": "dist/index.js",
+    "name": "@aws-sdk-local-fakes/fake-dynamodb-parser",
+    "private": true,
+    "scripts": {
+        "antlr:clean": "rm -rf generated/",
+        "antlr:generate": "java -jar tool/antlr.jar -Dlanguage=TypeScript -visitor -Werror -Xexact-output-dir -o generated/ grammar/",
+        "build": "npx tsc --build --stopBuildOnErrors",
+        "clean": "npx tsc --build --clean"
+    },
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "version": "0.0.1"
+}
